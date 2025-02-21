@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+		"name": "Responsive Viewer",
+		"link": "https://chromewebstore.google.com/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb",
+		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/chromeExtensions/responsive-viewer.webp",
+    "type": "Responsive Design",
+    "usage": 3
+  },
+  {
+    "id": 2,
+		"name": "WhatFont",
+		"link": "https://chromewebstore.google.com/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm",
+		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/chromeExtensions/whatFont.webp",
+    "type": "Identify fonts",
+    "usage": 4
+  },
+  {
+    "id": 3,
+		"name": "Selector de Color",
+		"link": "https://chromewebstore.google.com/detail/selector-de-color-herrami/phillbeieoddghchonmfebjhclflpoaj",
+		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/chromeExtensions/selector-de-color.webp",
+    "type": "Color selector",
+    "usage": 5
+  },
+  {
+    "id": 4,
+		"name": "SVG Gobbler",
+		"link": "https://chromewebstore.google.com/detail/svg-gobbler/mpbmflcodadhgafbbakjeahpandgcbch",
+		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/chromeExtensions/svg-gobbler.webp",
+    "type": "SVG Finder",
+    "usage": 5
+  },
+  {
+    "id": 5,
+		"name": "JSON formatter",
+		"link": "https://chromewebstore.google.com/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa",
+		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/chromeExtensions/json-formatter.webp",
+    "type": "JSON formatter",
+    "usage": 3
+  },
+  {
+    "id": 6,
+		"name": "React Tools",
+		"link": "https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi",
+		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/chromeExtensions/react-developer-tools.webp",
+    "type": "Developer tools",
+    "usage": 5
+  }
+]

@@ -1,0 +1,57 @@
+---
+import type { Resource as ResourceType } from '../../types'
+import ArrowDown from '../icons/ArrowDown.astro'
+
+interface Props extends Omit<ResourceType, 'id'> {}
+const { name, link, img, type, usage } = Astro.props
+---
+
+<article class="relative animate-on-scroll ">
+  {
+    type && (
+      <span class="absolute left-[50%] -translate-x-[50%] z-10 text-sm font-medium bg-badge-info px-2 py-1 rounded-b-lg">{type}</span>
+    )
+  }
+
+  <a
+    class="group block bg-light dark:bg-dark outline-2 rounded-xl overflow-hidden"
+    href={link}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label={`Open ${name} in a new tab`}
+  >
+    <div class="h-52 overflow-hidden">
+      <img
+        class="lazy size-full object-cover object-left transition-transform group-hover:scale-105"
+        data-src={img}
+        src="/loading.gif"
+        alt={`Thumbnail of ${name}`}
+      >
+    </div>
+
+    <div class="flex justify-between items-center p-4">
+      <div class="text-darkend dark:text-lightend flex items-center">
+        <h3 class="text-lg">{name}</h3>
+        <ArrowDown class="indicator" />
+      </div>
+
+      <div>
+        {usage === 5 && (<span class="badge-sm bg-badge-trending">trending</span>)}
+        {usage === 4 && (<span class="badge-sm bg-badge-popular">popular</span>)}
+      </div>
+    </div>
+  </a>
+</article>
+
+<script>
+  import lazyLoading from "../../utils/lazyLoading"
+
+  lazyLoading()
+
+  document.addEventListener('astro:after-swap', () => {
+    const excludedRoutes = ['/']
+    const isExcludedRoute = excludedRoutes.includes(window.location.pathname);
+    if (!isExcludedRoute) lazyLoading()
+    lazyLoading()
+  })
+</script>

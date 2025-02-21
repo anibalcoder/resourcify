@@ -1,0 +1,27 @@
+---
+import type { GetStaticPaths } from "astro"
+import categories from "../../data/categories"
+import Layout from "../../layouts/Layout.astro"
+import Resources from "../../components/resource-list/Resources.astro";
+
+export const getStaticPaths = (() => {
+  return categories.map((category) => (
+    {
+      params: { nameID: category.nameID },
+      props: {
+        description: category.description,
+        resources: category.resources
+      }
+    }
+  ))
+}) satisfies GetStaticPaths;
+
+const { description, resources } = Astro.props
+---
+
+<Layout
+  title={`Resourcify: ${description}`}
+  description='Resourcify is your ultimate platform for discovering the best digital resources for designers and developers. Find icons, fonts, tools, and more all in one place. 🚀'
+>
+  <Resources resources={resources} />
+</Layout>

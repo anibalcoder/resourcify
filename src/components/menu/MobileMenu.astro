@@ -1,0 +1,27 @@
+---
+import categories from "../../data/categories"
+import { MenuToggle } from "./MenuToggle";
+---
+
+<section class="flex md:hidden text-darkend dark:text-lightend">
+  <MenuToggle client:load />
+
+  <ul
+    id="mobileMenu"
+    class="hidden w-full h-lvh absolute top-full right-0 bg-light dark:bg-dark p-4"
+  >
+    {
+      categories.map(({ link, name }) => (
+        <li>
+          <a
+            class="block font-medium p-3 rounded-lg transition-colors hover:bg-action-dark/10 dark:hover:bg-action-dark"
+            href={`${link}`}
+            aria-label={`View resources in ${name} category`}
+          >
+            <h3>{name}</h3>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</section>

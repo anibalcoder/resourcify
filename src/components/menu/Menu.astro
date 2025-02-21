@@ -1,0 +1,27 @@
+---
+import categories from "../../data/categories"
+---
+
+<ul
+  class="w-[550px] bg-lightend dark:bg-darkend p-5 grid grid-cols-2 gap-4 border border-brd-light dark:border-brd-dark rounded-xl absolute top-full z-50 scale-0 group-hover:scale-none transition-transform delay-150"
+>
+  {
+    categories.map(({ link, name, description }) => (
+      <li>
+        <a
+          class="block text-sm font-medium p-4 rounded-lg transition-colors hover:bg-action-light dark:hover:bg-action-dark"
+          href={`${link}`}
+          aria-label={`${name} - ${description}`}
+        >
+          <h3 class="text-darkend dark:text-lightend">
+            {name}
+          </h3>
+
+          <p class="text-p-light dark:text-p-dark mt-2">
+            {description}
+          </p>
+        </a>
+      </li>
+    ))
+  }
+</ul>

@@ -1,0 +1,32 @@
+---
+import type { Category as CategoryType } from '../../types'
+
+interface Props extends Omit<CategoryType, 'nameID' | 'resources'> {}
+const { name, description, link, img, total } = Astro.props
+---
+
+<article
+  class="bg-light dark:bg-dark outline hover:outline-2 outline-brd-dark dark:outline-brd-light rounded-2xl transition-transform duration-300 hover:scale-105"
+>
+  <a
+    class="block text-darkend dark:text-lightend py-6 px-4"
+    href={link}
+    aria-label={`View details about ${name}. It contains ${total} resources.`}
+  >
+    <div class="mb-3">
+      <h2 class="font-secondary text-2xl font-semibold">
+        {name}
+      </h2>
+
+      <span>{total}</span>
+    </div>
+
+    <div class="w-full aspect-square rounded-2xl overflow-hidden">
+      <img
+        class="lazy size-full object-cover object-center"
+        src={img}
+        alt={description}
+      >
+    </div>
+  </a>
+</article>

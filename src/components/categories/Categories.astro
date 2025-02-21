@@ -1,0 +1,28 @@
+---
+import categories from "../../data/categories"
+import Category from "./Category.astro"
+import { slide } from "astro:transitions";
+---
+
+<section>
+  <div class="wrapper">
+    <ul
+      transition:animate={slide({ duration: '0.3s' })}
+      class="grid-responsive"
+    >
+      {
+        categories.map(({ name, description, link, img, total }) => (
+          <li>
+            <Category
+              name={name}
+              description={description}
+              link={link}
+              img={img}
+              total={total}
+            />
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>

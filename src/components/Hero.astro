@@ -1,0 +1,31 @@
+---
+import Contribute from "./Contribute.astro";
+import { Search } from "./search/Search";
+import { slide } from "astro:transitions";
+---
+
+<section
+  class="relative z-10 bg-linear-to-r from-primary-light dark:from-primary-dark to-secondary-light dark:to-secondary-dark"
+>
+  <div
+    transition:animate={slide({ duration: '0.3s' })}
+    class="wrapper flex flex-col items-center justify-center gap-6"
+  >
+    <Contribute />
+
+    <h1 class="font-secondary text-darkend dark:text-lightend text-center font-bold leading-10">
+      Free Design Resources
+    </h1>
+
+    <p class="max-w-2xl text-p-light dark:text-p-dark text-center mb-3 text-balance">
+      Discover thousands of free design resources for your next project. Icons, illustrations, UI components, and more.
+    </p>
+
+    <Search client:load />
+  </div>
+</section>
+
+<style>
+  h1 {font-size: clamp(1.75rem, 5vw, 3rem);}
+  p {font-size: clamp(1rem, 3vw, 1.125rem);}
+</style>

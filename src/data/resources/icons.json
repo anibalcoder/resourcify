@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+		"name": "Google icons",
+		"link": "https://fonts.google.com/icons",
+		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/icons/google.webp",
+    "usage": 1
+  },
+  {
+    "id": 2,
+		"name": "Hero icons",
+		"link": "https://heroicons.com/",
+		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/icons/heroicons.webp",
+    "usage": 3
+  },
+  {
+    "id": 3,
+		"name": "Iconify",
+		"link": "https://icon-sets.iconify.design/",
+		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/icons/iconify.webp",
+    "usage": 5
+  },
+  {
+    "id": 4,
+		"name": "svgl",
+		"link": "https://svgl.app/",
+		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/icons/svgl.webp",
+    "usage": 5
+  },
+  {
+    "id": 5,
+		"name": "SVG Repo",
+		"link": "https://www.svgrepo.com/",
+		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/icons/svgrepo.webp",
+    "usage": 2
+  },
+  {
+    "id": 6,
+		"name": "Tabler icons",
+		"link": "https://tabler.io/icons",
+		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/icons/tabler.webp",
+    "usage": 4
+  }
+]

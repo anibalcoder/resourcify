@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@import '@fontsource/geist-sans';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* ========= Fonts ========= */
+  --font-primary: 'Geist Sans', sans-serif;
+  --font-secondary: 'Segoe UI', sans-serif;
+
+  /* ========= COLORS ======== */
+  --color-darkend:  hsl(220, 4%, 14%);
+  --color-dark: hsl(0, 0%, 10%);
+  --color-light: hsl(87, 27%, 94%);
+  --color-lightend: hsl(0, 0%, 100%);
+
+  /* Paragraph */
+  --color-p-dark: hsl(240, 5%, 58%);
+  --color-p-light: hsl(240, 4%, 46%);
+
+  /* Action */
+  --color-action-dark: hsl(240, 4%, 24%);
+  --color-action-light: hsl(240, 5%, 96%);
+
+  /* Border */
+  --color-brd-dark: hsl(240, 4%, 35%);
+  --color-brd-light: hsl(240, 7%, 92%);
+
+  /* Badge */
+  --color-badge-info: hsla(51, 100%, 55%, .9);
+  --color-badge-trending: hsl(97, 80%, 67%);
+  --color-badge-popular: hsl(211, 100%, 78%);
+
+  /* Gradient */
+  --color-primary-dark: hsl(0 0% 98% / 0.2);
+  --color-secondary-dark: hsl(240 3.7% 15.9% / 0.2);
+  --color-primary-light: hsl(240 5.9% 10% / 0.2);
+  --color-secondary-light: hsl(240 4.8% 95.9% / 0.2);
+}
+
+@layer components {
+  .wrapper {@apply max-w-7xl mx-auto px-4 py-20 md:py-24;}
+
+  .grid-responsive {
+    @apply grid gap-y-12 gap-x-10 place-content-center;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 320px));
+  }
+
+  .badge-xs {@apply text-xs py-1 px-2 rounded-md;}
+
+  .badge-sm {@apply text-sm px-3 py-2 rounded-md;}
+
+  .indicator {@apply opacity-0 size-4 -rotate-90 group-hover:ml-2 group-hover:opacity-100 transition-all;}
+}

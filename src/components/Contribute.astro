@@ -1,0 +1,53 @@
+---
+import GitHubIcon from "./icons/GitHub.astro";
+---
+
+<div class="borderAnimation rounded-full p-[2px]">
+  <a
+    class="font-secondary text-sm md:text-balance bg-action-light dark:bg-action-dark text-darkend dark:text-lightend font-medium inline-flex items-center gap-2 px-4 py-1 rounded-full transition-colors duration-300"
+    href="https://github.com/anibalcoder/resourcify"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contribute to Resourcify on GitHub (opens in a new tab)"
+  >
+    <GitHubIcon class="size-4" />
+    Contribute
+  </a>
+</div>
+
+<style>
+  .borderAnimation {
+    background-image: linear-gradient(120deg, #a184f0 25%, #feee39, #a184f0 75%);
+    animation: gradients 15s linear infinite;
+  }
+
+  @keyframes gradients {
+    0% {
+      background-position: 0 0;
+    }
+
+    50% {
+      background-position: -480px 0;
+    }
+
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+  @keyframes customFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-in {
+    animation: customFadeIn 0.5s ease-out;
+  }
+
+</style>

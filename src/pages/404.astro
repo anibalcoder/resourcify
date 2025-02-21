@@ -1,0 +1,35 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="404: Not Found"
+  description="The page you're looking for doesn't exist."
+>
+  <section>
+    <div class="wrapper flex flex-col justify-center items-center gap-4">
+      <figure class="max-w-lg">
+        <img
+          src="/404.webp"
+          alt="Illustration of a confused face, representing a 404 error"
+        >
+      </figure>
+
+      <div>
+        <h1 class="font-secondary text-darkend dark:text-lightend text-center font-bold">
+          Hmmm!
+        </h1>
+
+        <p class="text-p-light dark:text-p-dark text-center">
+          The page you're looking for doesn't exist.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  h1 {font-size: clamp(1.75rem, 5vw, 3rem);}
+  p {font-size: clamp(1rem, 3vw, 1.125rem);}
+  img {filter: drop-shadow(0.5rem 0.5rem 1rem red);}
+</style>

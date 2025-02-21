@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+		"name": "Fontsource",
+		"link": "https://fontsource.org/",
+		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/fonts/fontsource.webp",
+    "usage": 5
+  },
+  {
+    "id": 2,
+		"name": "Google Fonts",
+		"link": "https://fonts.google.com/",
+		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/fonts/google.webp",
+    "usage": 3
+  },
+  {
+    "id": 3,
+		"name": "Fontshare",
+		"link": "https://fontshare.com/",
+		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/fonts/fontshare.webp",
+    "usage": 1
+  }
+]

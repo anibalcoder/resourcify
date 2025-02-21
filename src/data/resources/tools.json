@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+		"name": "Squoosh",
+		"link": "https://squoosh.app/",
+		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/tools/squoosh.webp",
+    "type": "Image optimizer",
+    "usage": 5
+  },
+  {
+    "id": 2,
+		"name": "Shots",
+		"link": "https://shots.so/",
+		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/tools/shots.webp",
+    "type": "Mockups",
+    "usage": 5
+  },
+  {
+    "id": 3,
+		"name": "SVGOMG",
+		"link": "https://svgomg.net/",
+		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/tools/svgomg.webp",
+    "type": "SVG optimizer",
+    "usage": 5
+  },
+  {
+    "id": 4,
+		"name": "Layoutit",
+		"link": "https://grid.layoutit.com/",
+		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/tools/layoutit.webp",
+    "type": "Grid generator",
+    "usage": 1
+  },
+  {
+    "id": 5,
+		"name": "JSONBIN",
+		"link": "https://jsonbin.io/",
+		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/tools/jsonbin.webp",
+    "type": "JSON storage",
+    "usage": 3
+  },
+  {
+    "id": 6,
+		"name": "Quicktype",
+		"link": "https://quicktype.io/",
+		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/tools/quicktype.webp",
+    "type": "Convert JSON",
+    "usage": 3
+  },
+  {
+    "id": 7,
+		"name": "Rapi Api",
+		"link": "https://rapidapi.com/collections",
+		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/tools/rapidapi.webp",
+    "type": "API collections",
+    "usage": 3
+  }
+]

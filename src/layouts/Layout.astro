@@ -1,22 +1,44 @@
+---
+import { ClientRouter } from 'astro:transitions';
+import Header from '../components/Header.astro'
+import '../styles/global.css'
+
+interface Props {
+	title: string
+	description: string
+}
+
+const {title, description} = Astro.props
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
+		<meta name="autor" content="anibalcoder">
+		<meta name="description" content={description}>
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>{title}</title>
+		<ClientRouter />
+		<!-- Open Graph / Facebook -->
+		<meta property="og:url" content="https://resourcify.vercel.app/" />
+		<meta property="og:site_name" content="Resourcify" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content="https://resourcify.vercel.app/website.webp" />
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content="https://resourcify.vercel.app/website.webp" />
 	</head>
 	<body>
-		<slot />
+		<main class="min-h-screen font-primary bg-lightend dark:bg-darkend">
+			<Header />
+			<slot />
+		</main>
 	</body>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>

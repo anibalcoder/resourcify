@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+		"name": "Color Hunt",
+		"link": "https://colorhunt.co/",
+		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/colors/colorhunt.webp",
+    "usage": 5
+  },
+  {
+    "id": 2,
+		"name": "Spectrum",
+		"link": "https://colorspectrum.design/generator.html",
+		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/colors/spectrum.webp",
+    "usage": 1
+  },
+  {
+    "id": 3,
+		"name": "UI Colors",
+		"link": "https://uicolors.app/create",
+		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/colors/uicolors.webp",
+    "usage": 3
+  },
+  {
+    "id": 4,
+		"name": "Huemint",
+		"link": "https://huemint.com/brand-intersection/",
+		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/colors/huemint.webp",
+    "usage": 1
+  },
+  {
+    "id": 5,
+		"name": "Happy Hues",
+		"link": "https://www.happyhues.co/",
+		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/colors/happyhues.webp",
+    "usage": 3
+  },
+  {
+    "id": 6,
+		"name": "Color Space",
+		"link": "https://mycolor.space/",
+		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/colors/colorSpace.webp",
+    "usage": 1
+  }
+]

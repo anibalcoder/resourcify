@@ -1,0 +1,19 @@
+---
+import ArrowDown from "./icons/ArrowDown.astro"
+import Menu from "./menu/Menu.astro"
+---
+
+<nav class="group hidden md:inline-block relative">
+  <button
+    type="button"
+    class="group text-sm text-darkend dark:text-lightend font-medium flex items-center gap-1 px-4 py-2 rounded-lg cursor-pointer transition-colors hover:bg-action-light dark:hover:bg-action-dark"
+    aria-label="Show resource options"
+    aria-expanded="false"
+  >
+    Resources
+
+    <ArrowDown class="group-hover:rotate-180 transition-transform delay-150" />
+  </button>
+
+  <Menu />
+</nav>
