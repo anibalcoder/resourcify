@@ -62,5 +62,13 @@
 		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/tools/svg-spinners.webp",
     "type": "SVG Loader",
     "usage": 5
+  },
+  {
+    "id": 9,
+		"name": "Shape Dividers",
+		"link": "https://www.shapedivider.app/",
+		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/tools/shape-dividers.webp",
+    "type": "Section separator",
+    "usage": 3
   }
 ]
