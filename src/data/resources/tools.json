@@ -54,5 +54,13 @@
 		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/tools/rapidapi.webp",
     "type": "API collections",
     "usage": 3
+  },
+  {
+    "id": 8,
+		"name": "SVG Spinners",
+		"link": "https://magecdn.com/tools/svg-loaders",
+		"img": "https://res.cloudinary.com/cloudvault/image/upload/resourcify/tools/svg-spinners.webp",
+    "type": "SVG Loader",
+    "usage": 5
   }
 ]
